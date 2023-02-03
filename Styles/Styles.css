@@ -4,13 +4,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fafafa;
 }
-.content1{
-    width: 36vw;
-    height: 40vw;
-    border: 1px solid black;
+.lelft{
+  margin-top: 60px;
+  margin-left: 200px;
+ margin-right: 50px;
+}
+.right{
+    width: 18vw;
+    height: 22vw;
+    border: 1px solid black ;
+    border-radius: 8px;
+    background-color:white;
     margin: 0 auto;
-    margin-top: 30vw;
+    margin-right: 420px;
+    margin-bottom: 100px;
+    margin-top: 16px;
+    padding-left: 36px;
+    padding-right: 36px;
+   padding-bottom: 18px;
+    
+}
+.right1{
+  border: 1px solid black;
+  margin-top: 36px;
+  background-color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 8px;
+}
+.right2{
+  margin-top: 10px;
+  
 }
 h1 {
   color: black;
@@ -26,37 +52,39 @@ h1 {
   width: 200px;
   display: flex;
   margin: 0 auto;
-  margin-top: 5px;
- 
+  margin-top: 8px;
+  padding: 10px;
+ border-radius: 4px;
 }
 
 .input-form button {
   width: 200px;
-  background-color: aqua;
+  height: 25px;
+  background-color: rgb(0,149,246,0.3);
   color: white;
-  border-radius: 6%;
-  border: none;
-  display: flex;
-  margin: 0 auto;
-  margin-top: 5px;
-  text-align: center;
-  text-decoration: none;
+  border-radius: 6px  ;
+  border: 1px solid white;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top:auto;
+  padding-bottom: auto;
+  margin-top: 10px;
+  margin-bottom: 20 px;
+  margin-left: 20px;
+ 
   
 }
 
-.login{
-    color: blue;
-    display: grid;
-}
+
 .login img {
   width: 15px;
   height: 15px;
   padding-right: 6px;
-  padding-top: 18px;
+  margin: auto 0;
 }
 .loginWFb {
     display:flex;
-   margin: 6px;
-   
+ 
     justify-content: center;
+
 }

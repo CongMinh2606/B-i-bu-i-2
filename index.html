@@ -6,42 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="Styles/Styles.css" />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+
   </head>
   <body>
     <div class="container">
-        <div class="content1">
-            <h1 >Instagram</h1>
-            <div class="input-form">
-              <input class="item" type="email" placeholder="Email" />
-              <input type="password" placeholder="Password" />
-              <button>Login in</button>
-            
-            </div>
-            <div style="display: flex; 
-                        justify-content: center;
-                        align-items: center;
-                        margin: 0 auto;">
-                <div style="height: 0.5px; 
-                            background-color:rgb(92, 92, 92); 
-                            width: 90px;"></div>
-                <div style="margin-left: 5px; 
-                            margin-right: 5px; 
-                            font-weight: 300;">
-                    or
-                </div>
-                <div style="height: 0.5px; 
-                            background-color:rgb(92, 92, 92); 
-                            width: 90px;"></div>
-            </div>
+      <div class = " lelft"style="display: flex;
+      
+      height: 500px;">
+        <img src="../../img/screenshot3.png"style="margin-right:4px; border: 10px solid black;border-radius: 26px;"  alt="">
+        <img src="../../img/screenshot1.png" style="border: 10px solid black;border-radius: 26px;" alt="">
+        
+      </div>
+      
 
-            <div class="login">
-               <div class="loginWFb">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU7V53///82U5soSpbx8/izvdlofLA5VZw/XKHd4eyrt9QzUZpec6v2+PuFlb/o6/S8xdxzhbdEYKPX3eugrM19j71ZcKv09vrl6fLHz+JVbaovTpmWpMlPaah1h7hid67O1eaRn8aWpMoPO5AjRZW/EryeAAAEb0lEQVR4nO3dC4+iSBSG4aJED1rQIDcvqNiz+/9/48DYvbOXBEvZ4pyqfG8mnXQybXiCgBRQquhRXjRtqUKpbJsi/5KpXz/jOlWaiHvB/reItErr+Lew2msdDu8Rab2vvoVFaULzjZEpi4ewKjX3wjhKl9UojG+Ge0mcZW7xIKyD2wR/R7qOVJ6G+h4d02muChXuKhxW4uBrwt0Kx0yj2pBX4bASW1UGLgznoyhCCCGEEEIIIYQQchaNV8lIf0fDb+OP8eKZ/8Nng8EQJeW57Tdf9X2ftufz9Vom43/Qxhh/r0eQ0UnbXHane3XM4/hwiMfy/HjcVtX9fiqKdV1/ftw258RDI+muS/a7e37IoqmybHAfPbxuplX7cYonbX9nfvgmNGqz3k6vO5+FZFb9X3dQhCgk1a9f4vkm1El9fBXok5C6c/Gyzych6c/XNkDfhJRcXtiBeijUqj68BfRFSOqdTdAjISW7d4F+CEm/uQ16I+w+3wd6IdTntw4T/ggpeXsv44eQqJ4D9ECoN69/FvVLuJr1HvVAqDfzgOKFMz7MeCI0e+sBGT+FM48UHgh1P29HKl/Yfc4FChdSVwUu1NcZH7m9EJqP2UDhQnUKXEjXbeBC/eLhPntcYvtnueSnRewHL7L8frn1pdLdfxN8+ZCU7UWK7aVPxsu9ROPzS//6J7nEbkeT1WdPL2bT2ep4H28kvxEno95mBCr+6LgX9O303mYgf8e9mDMyjcWu1OsnlK1OLC6Cj3ZP6y4WwrPHq1CtLAZKK2/3o2MriwtO6xX3Us5pZfGRpg5dmHl8MFR2QsknDs+zEB72oQvjjc8HCwgh9CAIIZQfhBDKD0II5QchhPKDEEL5QeiHkCayEpqpVyABT3QnE3U2wslXGOP1UXvfTmRxr8lx6u/HCt4BVZ3OeZLCqhPvsP8Cwl3wwjp0IffFKffCeM97wHQvzFPeA6J7YXUNXXhingXZvZB7snX3wh3z51LnwuwH87mHc+GB+04G58Lh7Cpw4ZH7KwGcCyvurwRwLjxxn+I7F66573B3LvzBfcuUcyH7XG3OhT33YKNrYcZ8ZuFemLN/lZpr4Zb9DmLXwlPwwl3wwgv7XeCOhdxDie6F3EOJ7oVH/u/8cyzkHkp0L+QeSnQv5B5KVOOUAvVuoufzDWTF1N837MCBuJroj+fPrsXpnxMvwH3q9LQw7sWYCkII5QchhPKDEEL5QQih/CCEUH4QQig/CCGUH4QQyg9CCOUHIYTygxBC+UEIofwghFB+EEIoPwghlB+EEMoPQgjlByGE8oMQQvlBCKH8IIRQfhBCKD8IIZQfhBC+ENPkC4sJSSU8xKWEVCqmSUAXE7aKaarapYSmUUzzvCwkpMGX88y3tJBQp7mKapaJTpcRkq4jFcUs84AuIzS3eBBGVcnwPl1EqMsqGoVRUS4/UeYCQjJlET2EUbXXS2+MzoWk9b6KvoVRXKdKL/oFUW6FRFql9WM2NfX1cnnRtEvO8eZWWLZN8T1b3E8GyF19lc9R6AAAAABJRU5ErkJggg==" alt="" >
-                    <p>Log in with Facebook</p>
-               </div>
-               <div style="margin: 0 auto;"> Forgot password </div>
+
+      <div class="right">
+        <h1 style="font-size: 40px; margin-bottom: 46px;font-family: 'Dancing Script', cursive;" >Instagram</h1>
+        
+        <div class="input-form">
+          <input class="item" type="Phone number username, or email" placeholder="Phone number,username,or email" />
+          <input type="password" placeholder="Password" />
+          <button style="text-align: center; ">Login in</button>
+        
+        </div>
+        <div style="display: flex; 
+                    justify-content: center;
+                    align-items: center;
+                    ">
+            <div style="height: 0.5px; 
+                        background-color:rgb(92, 92, 92); 
+                        width: 90px;"></div>
+            <div style="margin-left: 5px; 
+                        margin-right: 5px; 
+                        font-weight: 300;">
+                or
             </div>
+            <div style="height: 0.5px; 
+                        background-color:rgb(92, 92, 92); 
+                        width: 90px;"></div>
+        </div>
+
+        <div class="login">
+          <div class="loginWFb" style="margin-top: 18px;">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU7V53///82U5soSpbx8/izvdlofLA5VZw/XKHd4eyrt9QzUZpec6v2+PuFlb/o6/S8xdxzhbdEYKPX3eugrM19j71ZcKv09vrl6fLHz+JVbaovTpmWpMlPaah1h7hid67O1eaRn8aWpMoPO5AjRZW/EryeAAAEb0lEQVR4nO3dC4+iSBSG4aJED1rQIDcvqNiz+/9/48DYvbOXBEvZ4pyqfG8mnXQybXiCgBRQquhRXjRtqUKpbJsi/5KpXz/jOlWaiHvB/reItErr+Lew2msdDu8Rab2vvoVFaULzjZEpi4ewKjX3wjhKl9UojG+Ge0mcZW7xIKyD2wR/R7qOVJ6G+h4d02muChXuKhxW4uBrwt0Kx0yj2pBX4bASW1UGLgznoyhCCCGEEEIIIYQQchaNV8lIf0fDb+OP8eKZ/8Nng8EQJeW57Tdf9X2ftufz9Vom43/Qxhh/r0eQ0UnbXHane3XM4/hwiMfy/HjcVtX9fiqKdV1/ftw258RDI+muS/a7e37IoqmybHAfPbxuplX7cYonbX9nfvgmNGqz3k6vO5+FZFb9X3dQhCgk1a9f4vkm1El9fBXok5C6c/Gyzych6c/XNkDfhJRcXtiBeijUqj68BfRFSOqdTdAjISW7d4F+CEm/uQ16I+w+3wd6IdTntw4T/ggpeXsv44eQqJ4D9ECoN69/FvVLuJr1HvVAqDfzgOKFMz7MeCI0e+sBGT+FM48UHgh1P29HKl/Yfc4FChdSVwUu1NcZH7m9EJqP2UDhQnUKXEjXbeBC/eLhPntcYvtnueSnRewHL7L8frn1pdLdfxN8+ZCU7UWK7aVPxsu9ROPzS//6J7nEbkeT1WdPL2bT2ep4H28kvxEno95mBCr+6LgX9O303mYgf8e9mDMyjcWu1OsnlK1OLC6Cj3ZP6y4WwrPHq1CtLAZKK2/3o2MriwtO6xX3Us5pZfGRpg5dmHl8MFR2QsknDs+zEB72oQvjjc8HCwgh9CAIIZQfhBDKD0II5QchhPKDEEL5QeiHkCayEpqpVyABT3QnE3U2wslXGOP1UXvfTmRxr8lx6u/HCt4BVZ3OeZLCqhPvsP8Cwl3wwjp0IffFKffCeM97wHQvzFPeA6J7YXUNXXhingXZvZB7snX3wh3z51LnwuwH87mHc+GB+04G58Lh7Cpw4ZH7KwGcCyvurwRwLjxxn+I7F66573B3LvzBfcuUcyH7XG3OhT33YKNrYcZ8ZuFemLN/lZpr4Zb9DmLXwlPwwl3wwgv7XeCOhdxDie6F3EOJ7oVH/u/8cyzkHkp0L+QeSnQv5B5KVOOUAvVuoufzDWTF1N837MCBuJroj+fPrsXpnxMvwH3q9LQw7sWYCkII5QchhPKDEEL5QQih/CCEUH4QQig/CCGUH4QQyg9CCOUHIYTygxBC+UEIofwghFB+EEIoPwghlB+EEMoPQgjlByGE8oMQQvlBCKH8IIRQfhBCKD8IIZQfhBC+ENPkC4sJSSU8xKWEVCqmSUAXE7aKaarapYSmUUzzvCwkpMGX88y3tJBQp7mKapaJTpcRkq4jFcUs84AuIzS3eBBGVcnwPl1EqMsqGoVRUS4/UeYCQjJlET2EUbXXS2+MzoWk9b6KvoVRXKdKL/oFUW6FRFql9WM2NfX1cnnRtEvO8eZWWLZN8T1b3E8GyF19lc9R6AAAAABJRU5ErkJggg==" alt="" >
+            <a style="margin: auto 0; color:rgb(56,81,133); margin-bottom:6px;" href="#">Log in with Facebook</a>
+            
+       </div>
+       <a style="margin-left:80px; color:	#7a8b8b; margin-top: 6px;" href="#">Forgot password</a>
+    
+</div>
+<div class="right1" style="display: flex;
+                            justify-content: center;
+                            align-items:center;            ">
+  <p style="margin-right: 4px;"> Don't have an account? </p>
+  <a style="color: blue;" href="#">Sign up</a>
+  
+  
+</div>
+<div class="right2">
+  <p style="display:flex ;justify-content: center;">Get the app.</p>
+<img src="../../img/gg.png" style="height: 40px; width: 120px; margin-left: 14px;" alt="">
+<img src="../../img/mm.png" style="height: 40px; width: 100px; margin: 0 auto;" alt="">
+</div>
+<div class="duoi"style=" display:inline block;">
+  <a style="color: darkgrey;"href="#">Meta</a>
+  <a style="color: darkgrey;"href="#">About</a>
+  <a style="color: darkgrey;"href="#">Blog</a>
+  <a style="color: darkgrey;"href="#">Job</a>
+  <a style="color: darkgrey;"href="#"> Help</a>
+  <a style="color: darkgrey;"href="#"> API</a>
+  <a style="color: darkgrey;"href="#">Privacy</a>
+  <a style="color: darkgrey;"href="#">Terms</a>
+  <a style="color: darkgrey;"href="#">Top Accounts</a>
+  <a style="color: darkgrey;"href="#">Locations</a>
+  <a style="color: darkgrey;"href="#">Instagram Lite
+  </a>
+  <a style="color: darkgrey;"href="#">Contact Uploading & Non-Users</a>
+
+
+</div>
+
         </div>
         
         

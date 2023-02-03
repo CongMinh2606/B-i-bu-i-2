@@ -1,19 +1,19 @@
-let so1 = Math.ceil(Math.random(1,100)*100);
+let so1 = (Math.ceil(Math.random(1,100)*100));
 let ketqua;
 let dapandung= false;
 
 while(!dapandung) {
-    ketqua = prompt("nhap so: ", 0);
-    console.log(ketqua);
+    ketqua = prompt("nhap so: ");
     if (ketqua>so1)
     {
-        console.log("số random nhỏ hơn kết quả");
+        alert("số random nhỏ hơn kết quả");
     } else if(ketqua<so1) {
-        console.log("số random lớn hơn kết quả");
+        alert("số random lớn hơn kết quả");
     }else{
-        console.log("chúc mừng");
+        alert("chúc mừng");
         dapandung = true;
     }
 }
+
 
 
